@@ -6,6 +6,16 @@ function BookForm( props ){
             {/*
                 Your code goes here
             */}
+            <form onSubmit={() => props.fetchBooks(event)}>
+                <label htmlFor="bookName">
+                    Book name:
+                </label>
+                <input type="text" name="bookName" id="bookName"/>
+
+                <button type="submit">
+                    Submit
+                </button>
+            </form>
         </div>
     );
 }
